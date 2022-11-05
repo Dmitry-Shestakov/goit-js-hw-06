@@ -1,23 +1,23 @@
-// const form = document.querySelector(".login-form");
+const form = document.querySelector(".login-form");
 
-// form.addEventListener("submit", handleSubmit);
+form.addEventListener("submit", handleSubmit);
 
-// function handleSubmit(event) {
-//   event.preventDefault();
-//   const {
-//     elements: { email, password },
-//   } = event.currentTarget;
+function handleSubmit(event) {
+  event.preventDefault();
+  const {
+    elements: { email, password },
+  } = event.currentTarget;
 
-//   if (email.value === "" || password.value === "") {
-//     return alert("Необхідно заповнити всі поля!");
-//   }
+  if (email.value === "" || password.value === "") {
+    return alert("Необхідно заповнити всі поля!");
+  }
 
-//   const finalObj = {
-//     email: email.value,
-//     password: password.value,
-//   };
+  const finalObj = {
+    email: email.value,
+    password: password.value,
+  };
 
-//   console.log(finalObj);
+  console.log(finalObj);
 
-//   event.currentTarget.reset();
-// }
+  event.currentTarget.reset();
+}
